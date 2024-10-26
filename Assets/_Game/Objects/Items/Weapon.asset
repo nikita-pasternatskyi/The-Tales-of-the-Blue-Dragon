@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07622df77c1d3774cb6f62e79091d175, type: 3}
+  m_Name: Weapon
+  m_EditorClassIdentifier: 
+  Image: {fileID: 21300000, guid: 9c63d6a9ca485ec489eb598b0edc441f, type: 3}
+  Color: {r: 1, g: 1, b: 1, a: 1}
+  Name: Katana
+  Description: Default Weapon
+  AnimationWeaponModel: {fileID: 919132149155446097, guid: debd1503a7012c846bb15515b4a45db2,
+    type: 3}
+  CombatWeaponPrefab: {fileID: 6035097899279002940, guid: 65e518ce85eb24e478809c85016ce8ce,
+    type: 3}
+  AnimatorOverrideController: {fileID: 0}
+  Attacks:
+  - Radius: 1
+    Distance: 0
+    Damage: 1
+    Cooldown: 0.25
+    HitDelay: 0.125
+    ReturnDelay: 0.3
+    JumpForce: {x: 0, y: 0}
+    Triggered:
+      m_PersistentCalls:
+        m_Calls: []
+  - Radius: 1
+    Distance: 0
+    Damage: 1
+    Cooldown: 0.3
+    HitDelay: 0.15
+    ReturnDelay: 0.4
+    JumpForce: {x: 0, y: 0}
+    Triggered:
+      m_PersistentCalls:
+        m_Calls: []
+  - Radius: 1
+    Distance: 0
+    Damage: 1
+    Cooldown: 0.35
+    HitDelay: 0.3
+    ReturnDelay: 0.3
+    JumpForce: {x: 1, y: 0}
+    Triggered:
+      m_PersistentCalls:
+        m_Calls: []
+  - Radius: 1
+    Distance: 0.15
+    Damage: 1
+    Cooldown: 0.8
+    HitDelay: 0.4
+    ReturnDelay: 0.3
+    JumpForce: {x: 3, y: 0}
+    Triggered:
+      m_PersistentCalls:
+        m_Calls: []
+  RunningAttack:
+    Radius: 2
+    Distance: 0
+    Damage: 3
+    Cooldown: 1
+    HitDelay: 0.75
+    ReturnDelay: 0.3
+    JumpForce: {x: 4, y: 0.25}
+    Triggered:
+      m_PersistentCalls:
+        m_Calls: []
+  ParryAttack:
+    Radius: 0
+    Distance: 0
+    Damage: 0
+    Cooldown: 0
+    HitDelay: 0
+    ReturnDelay: 0
+    JumpForce: {x: 0, y: 0}
+    Triggered:
+      m_PersistentCalls:
+        m_Calls: []

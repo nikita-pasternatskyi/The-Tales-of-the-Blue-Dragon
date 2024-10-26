@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1b8dd9136c1ba4389907684a64bd42, type: 3}
+  m_Name: Village-Normal
+  m_EditorClassIdentifier: 
+  SkyColor: {r: 1.54717, g: 1.1457815, b: 1.3422056, a: 1}
+  EquatorColor: {r: 0.597202, g: 0.3515327, b: 0.40197787, a: 1}
+  GroundColor: {r: 0.088655606, g: 0.12213881, b: 0.084376216, a: 1}
+  FogColor: {r: 0.44520125, g: 0.30054384, b: 0.32777813, a: 1}
+  FogDensity: 0.02
+  SunColor: {r: 0.75294125, g: 0.67058825, b: 0.5764706, a: 1}
+  SkyboxTexture: {fileID: 8900000, guid: 9c6ae39d3dcab704f96416a2b5f63677, type: 3}
+  SkyboxTint: {r: 0.7264151, g: 0.7264151, b: 0.7264151, a: 0}
+  RotateSkybox: 1
+  RotationSpeed: 0.25
+  SkyboxExposure: 1

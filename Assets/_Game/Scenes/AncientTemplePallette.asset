@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c509dbaa7b6f416409e3195321a2187e, type: 3}
+  m_Name: AncientTemplePallette
+  m_EditorClassIdentifier: 
+  PaletteLayers:
+  - {fileID: 8574412962073106934, guid: b457787ef7a42a44481ee8d91904b93a, type: 2}
+  - {fileID: 8574412962073106934, guid: a13c74c4f5eb73248949674c3c295cc7, type: 2}
+  - {fileID: 8574412962073106934, guid: 884bd6d949348744c9afcff468ea1cff, type: 2}
+  - {fileID: 8574412962073106934, guid: f3ee5819852e0e240bcbf2e23c728410, type: 2}
+  - {fileID: 8574412962073106934, guid: 584d819486e776948847ab059d9ff75e, type: 2}
+  - {fileID: 8574412962073106934, guid: b73ea8680ba82ab4ca6b8c169ba9ce69, type: 2}

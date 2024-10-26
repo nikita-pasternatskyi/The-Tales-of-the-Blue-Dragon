@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1b8dd9136c1ba4389907684a64bd42, type: 3}
+  m_Name: Finale
+  m_EditorClassIdentifier: 
+  SkyColor: {r: 0.5394797, g: 0.35640025, b: 0.57112503, a: 1}
+  EquatorColor: {r: 0.41788515, g: 0.36130688, b: 0.6444799, a: 1}
+  GroundColor: {r: 0.088655606, g: 0.12213881, b: 0.084376216, a: 1}
+  UseFog: 1
+  FogColor: {r: 0.9599502, g: 0.6462264, b: 1, a: 1}
+  FogDensity: 0.003
+  SunColor: {r: 1, g: 0.8349057, b: 0.6462264, a: 1}
+  SkyboxTexture: {fileID: 8900000, guid: 8a293ce833d584fc98516e0e74f495a4, type: 3}
+  SkyboxTint: {r: 0.7264151, g: 0.7264151, b: 0.7264151, a: 0}
+  RotateSkybox: 0
+  RotationSpeed: 0.25
+  SkyboxExposure: 2

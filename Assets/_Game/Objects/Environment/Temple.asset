@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1b8dd9136c1ba4389907684a64bd42, type: 3}
+  m_Name: Temple
+  m_EditorClassIdentifier: 
+  SkyColor: {r: 0, g: 0, b: 0, a: 1}
+  EquatorColor: {r: 0, g: 0, b: 0, a: 1}
+  GroundColor: {r: 0, g: 0, b: 0, a: 1}
+  FogColor: {r: 0.014684946, g: 0.05660379, b: 0.042630836, a: 1}
+  FogDensity: 0.02
+  SunColor: {r: 0.13020648, g: 0.2589896, b: 0.3584906, a: 1}
+  SkyboxTexture: {fileID: 8900000, guid: 8952b26fda285c9469b8fd55ba52eba3, type: 3}
+  SkyboxTint: {r: 0, g: 0, b: 0, a: 1}
+  RotateSkybox: 0
+  RotationSpeed: 0.25
+  SkyboxExposure: 1

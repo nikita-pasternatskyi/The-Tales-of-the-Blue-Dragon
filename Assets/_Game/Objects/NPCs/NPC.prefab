@@ -1,0 +1,296 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1667648635069382232
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5449148722507648883}
+  - component: {fileID: 6858330383243301350}
+  m_Layer: 7
+  m_Name: Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5449148722507648883
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667648635069382232}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6293305727268341850}
+  m_Father: {fileID: 5868118526222189826}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6858330383243301350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667648635069382232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b0bf1f529b31714c836dbca50f6333d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _canvasPrefab: {fileID: 4208579650943184068, guid: 5d3c0e06a9188e04baaf98da0c609fa8,
+    type: 3}
+  _actionsThatContinueDialogue:
+  - {fileID: -494001066199831120, guid: cdd6a004f61fb4d42acfbb6c8e35b66b, type: 3}
+  - {fileID: -6534122386441076301, guid: cdd6a004f61fb4d42acfbb6c8e35b66b, type: 3}
+  - {fileID: 1104994481676873790, guid: cdd6a004f61fb4d42acfbb6c8e35b66b, type: 3}
+  _head: {fileID: 3804876267542581043}
+  _dialogueInitatedEvent: {fileID: 11400000, guid: cbf6c359975cda04aae1001cf20fc1d4,
+    type: 2}
+  _dialogueEndedEvent: {fileID: 11400000, guid: 85701c6a2fc3df14184bca06e7bf0819,
+    type: 2}
+  _dialogueUIViewPrefab: {fileID: 7654939706166490321, guid: ac739fd140498bb4e910bc3d7f6a54c9,
+    type: 3}
+  _dialogueLines:
+  - Text: Thank you for saving my village!
+    ScrollSpeed: 0.05
+    Skippable: 1
+  - Text: However, the silence won't last long
+    ScrollSpeed: 0.05
+    Skippable: 1
+  - Text: Go to the forest, find the floating monument
+    ScrollSpeed: 0.05
+    Skippable: 1
+  - Text: It shall give you the power of the ancient
+    ScrollSpeed: 0.05
+    Skippable: 1
+  - Text: With it you will be able to stop this madness
+    ScrollSpeed: 0.05
+    Skippable: 1
+  - Text: Follow the skeletons! They will lead you there
+    ScrollSpeed: 0.05
+    Skippable: 1
+  _canRestart: 0
+  DialogueStarted:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3758532386288484987}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Talk
+          m_BoolArgument: 0
+        m_CallState: 2
+  DialogueProgressed:
+    m_PersistentCalls:
+      m_Calls: []
+  DialogueCompleted:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8605400210626970729}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 3758532386288484987}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Idle
+          m_BoolArgument: 1
+        m_CallState: 2
+--- !u!1 &3804876267542581043
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6293305727268341850}
+  m_Layer: 7
+  m_Name: Head
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6293305727268341850
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3804876267542581043}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.8099995, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5449148722507648883}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4413193571532419638
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5868118526222189826}
+  - component: {fileID: 3758532386288484987}
+  - component: {fileID: 2139307578677394057}
+  - component: {fileID: 8605400210626970729}
+  - component: {fileID: 8040743471896871775}
+  m_Layer: 7
+  m_Name: NPC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5868118526222189826
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4413193571532419638}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 148.7863, y: 14.076626, z: 129.92949}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5449148722507648883}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &3758532386288484987
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4413193571532419638}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: ac0f2611d1707f5478a546970b47886f, type: 3}
+  m_Controller: {fileID: 9100000, guid: 479de5b2dafc5fb48ab23f44cba7f486, type: 2}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2139307578677394057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4413193571532419638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca5c1dd9797ab444f9e2ff360ea13d03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetGraphicColor: {r: 1, g: 1, b: 1, a: 1}
+  _targetGraphic: {fileID: 21300000, guid: d3bfd50179e07554095fc5523326c21e, type: 3}
+  _miniMapLayer: 9
+  _localPositionOffset: {x: 0, y: 0, z: 0}
+  _localRotation: {x: 90, y: 0, z: 0}
+  _scale: {x: 6, y: 6, z: 6}
+  _addToMapFromStart: 1
+--- !u!114 &8605400210626970729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4413193571532419638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c396196def92ccb46bdfc9626c8d5f42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <RequireButtonPrompt>k__BackingField: 1
+  <InteractionName>k__BackingField: To talk
+  <CloseDetectionRange>k__BackingField: 0
+  <ActiveDotProductRange>k__BackingField: 45
+  InteractedUnity:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6858330383243301350}
+        m_TargetAssemblyTypeName: MP.Game.Objects.Dialogue.Dialogue, MP.Game
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8605400210626970729}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!65 &8040743471896871775
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4413193571532419638}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.98, y: 2.44, z: 0.83}
+  m_Center: {x: 0, y: 0.82, z: 0}

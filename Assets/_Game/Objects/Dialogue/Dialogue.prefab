@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &303014185942010476
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6659464277853809428}
+  - component: {fileID: 1394966339504995155}
+  m_Layer: 7
+  m_Name: Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6659464277853809428
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303014185942010476}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7617275142239525876}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1394966339504995155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303014185942010476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b0bf1f529b31714c836dbca50f6333d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _canvasPrefab: {fileID: 4208579650943184068, guid: 5d3c0e06a9188e04baaf98da0c609fa8,
+    type: 3}
+  _actionsThatContinueDialogue:
+  - {fileID: -494001066199831120, guid: cdd6a004f61fb4d42acfbb6c8e35b66b, type: 3}
+  - {fileID: -6534122386441076301, guid: cdd6a004f61fb4d42acfbb6c8e35b66b, type: 3}
+  - {fileID: 1104994481676873790, guid: cdd6a004f61fb4d42acfbb6c8e35b66b, type: 3}
+  _head: {fileID: 4208677611303022157}
+  _dialogueInitatedEvent: {fileID: 11400000, guid: cbf6c359975cda04aae1001cf20fc1d4,
+    type: 2}
+  _dialogueEndedEvent: {fileID: 11400000, guid: 85701c6a2fc3df14184bca06e7bf0819,
+    type: 2}
+  _dialogueUIViewPrefab: {fileID: 7654939706166490321, guid: ac739fd140498bb4e910bc3d7f6a54c9,
+    type: 3}
+  _dialogueLines:
+  - Text: Hello bitch
+    ScrollSpeed: 0.05
+    Skippable: 0
+  _canRestart: 0
+  DialogueStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  DialogueProgressed:
+    m_PersistentCalls:
+      m_Calls: []
+  DialogueCompleted:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!1 &4208677611303022157
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7617275142239525876}
+  m_Layer: 7
+  m_Name: Head
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7617275142239525876
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4208677611303022157}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.8099995, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6659464277853809428}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
